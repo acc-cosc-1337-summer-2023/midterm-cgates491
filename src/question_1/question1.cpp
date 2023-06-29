@@ -6,8 +6,12 @@ using std::string;
 
 bool test_config(int num)
 {
-    if(num <= 10 && num >= 1);
+    if(num <= 10 && num >= 1){
     return true;
+    }
+    else{
+        return false;
+    }
 }
 
 string get_factorial_sequence(int num)
