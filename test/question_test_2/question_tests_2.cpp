@@ -8,5 +8,10 @@ TEST_CASE("Verify Test Configuration", "verification") {
 
 TEST_CASE("test")
 {
-	REQUIRE(test_config() == true);
+	REQUIRE(test_config("00001010") == true);
+}
+
+TEST_CASE("test binary to decimal")
+{
+	REQUIRE(binary_to_decimal("00001010") == 10);
 }
