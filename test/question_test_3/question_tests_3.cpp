@@ -8,5 +8,25 @@ TEST_CASE("Verify Test Configuration", "verification") {
 
 TEST_CASE("test")
 {
-	REQUIRE(test_config() == true);
+	REQUIRE(test_config(5) == true);
+}
+
+TEST_CASE("Test get_fib_sequence")
+{
+	REQUIRE(get_fib_sequence(5) == 5);
+}
+
+TEST_CASE("Test get_fib_sequence2")
+{
+	REQUIRE(get_fib_sequence(7) == 13);
+}
+
+TEST_CASE("Test get_fib_sequence3")
+{
+	REQUIRE(get_fib_sequence(10) == 55);
+}
+
+TEST_CASE("Test get_fib_sequence4")
+{
+	REQUIRE(get_fib_sequence(12) == 144);
 }
